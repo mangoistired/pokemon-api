@@ -4,7 +4,7 @@
 
 <head>
 
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
 
   <title>Meu Time Pokémon</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -13,6 +13,14 @@
 
 <body>
   <h1>🌟 Meu Time Pokémon 🌟</h1>
+
+  <form id="formPokemon">
+
+    <input type="text" id="nome" placeholder="Digite o nome do Pokémon" required />
+
+    <button type="submit">Adicionar ao time</button>
+
+  </form>
 
   <div class="container">
 
@@ -33,6 +41,29 @@
     {% endfor %}
 
   </div>
+
+  <script>
+    document.getElementById("formPokemon").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.toLowerCase();
+
+      const resposta = await fetch("/time", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nome })
+      });
+
+      const dados = await resposta.json();
+
+      if (resposta.ok) {
+        alert("Pokémon adicionado: " + dados.nome);
+        window.location.reload(); // recarrega a página para atualizar o time
+      } else {
+        alert("Erro: " + dados.erro);
+      }
+    });
+  </script>
 
 </body>
 
