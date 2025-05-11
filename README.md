@@ -46,6 +46,14 @@ A coleção de testes do Postman está disponível no arquivo `postman_collectio
 3. Selecione o arquivo `postman_collection.json` do repositório.
 4. Clique em **Import**.
 
+## Testes via navegador
+
+1. Rode a aplicação com `python app.py`
+2. Acesse `http://localhost:5000/visu`
+3. Digite o nome de um Pokémon (ex: pikachu) no campo e clique em "Adicionar ao time"
+4. A página vai atualizar e mostrar o novo Pokémon, assim como um botão de remover.
+
+
 ## Tecnologias usadas
 - Python + Flask
 - PokéAPI
