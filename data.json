@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "nome": "Pikachu",
+        "tipo": "Electric",
+        "nivel": 5,
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    }
+]
