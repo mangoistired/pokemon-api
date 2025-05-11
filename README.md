@@ -24,21 +24,18 @@ Este projeto é uma API REST feita com Flask que permite montar um time de até 
 ## Como rodar localmente
 
 1. Clone o repositório:
-git clone https://github.com/seu-usuario/api-time-pokemon.git
-cd api-time-pokemon
+`git clone https://github.com/mangositired/pokemon-api.git`
+`cd pokemon-api`
 
-Instale as dependências:
-    pip install -r requirements.txt
+2. Instale as dependências:
+`pip install -r requirements.txt`
 
-Rode a aplicação:
-    python app.py
+3. Rode a aplicação:
+`python app.py`
 
-Acesse no navegador:
-    API JSON: http://localhost:5000/time
-
-    Página visual: http://localhost:5000/visu
-
-    Documentação Swagger: http://localhost:5000/apidocs
+4. Acesse no navegador:
+- API JSON: http://localhost:5000/time
+- Página visual: http://localhost:5000/visu
 
 ## Testes com o Postman
 
@@ -50,6 +47,7 @@ A coleção de testes do Postman está disponível no arquivo `postman_collectio
 4. Clique em **Import**.
 
 ## Tecnologias usadas
-Python + Flask
-PokéAPI
-HTML + CSS
+- Python + Flask
+- PokéAPI
+- HTML + CSS
+- Postman

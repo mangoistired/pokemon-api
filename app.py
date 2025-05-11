@@ -39,7 +39,7 @@ def adicionar_pokemon():
     dados_pokeapi = resposta.json()
     tipo = dados_pokeapi['types'][0]['type']['name']
     imagem = dados_pokeapi['sprites']['front_default']
-    nivel = 5  # valor padrão
+    nivel = 5
 
     novo_pokemon = {
         "id": None, 
